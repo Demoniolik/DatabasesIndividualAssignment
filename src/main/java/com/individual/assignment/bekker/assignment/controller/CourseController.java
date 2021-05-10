@@ -7,7 +7,6 @@ import com.individual.assignment.bekker.assignment.dao.semester.SemesterDaoImpl;
 import com.individual.assignment.bekker.assignment.model.Lecturer;
 import com.individual.assignment.bekker.assignment.service.CourseService;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.lang.reflect.Type;

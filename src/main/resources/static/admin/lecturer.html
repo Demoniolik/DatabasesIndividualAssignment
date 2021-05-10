@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecturer</title>
+</head>
+<body>
+    <h1>Lecturers</h1>
+
+    <h2>Add new lecturer</h2>
+    <form action="/addNewLecturer" method="post" id="adding_new_lecturer">
+        <table>
+            <tr>
+                <td><label for="first_name">First name</label></td>
+                <td><input type="text" name="firstName" id="first_name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="second_name">Second name</label></td>
+                <td><input type="text" name="secondName" id="second_name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="sex">Sex</label></td>
+                <td><input type="text" name="sex" id="sex"></td>
+            </tr>
+
+            <tr>
+                <td><label for="telephone_number">Telephone number</label></td>
+                <td><input type="text" name="telephoneNumber" id="telephone_number"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="cabinet_number">Cabinet number</label></td>
+                <td><input type="text" name="cabinetNumber" id="cabinet_number"></td>
+            </tr>
+
+            <tr>
+                <td><label for="department">Department</label></td>
+                <td><select name="department" id="department"></select></td>
+            </tr>
+        </table>
+        <button type="submit">Add new lecturer</button>
+    </form>
+
+    <h2>Update new lecturer</h2>
+    <form action="/updateLecturer" method="post" id="updating_lecturer">
+        <table>
+            <tr>
+                <td><label for="updating_lecturers">Choose lecturer to change:</label></td>
+                <td><select name="lecturers" id="updating_lecturers"></select></td>
+            </tr>
+            
+            <tr>
+                <td><label for="first_name_update">First name</label></td>
+                <td><input type="text" name="firstName" id="first_name_update"></td>
+            </tr>
+
+            <tr>
+                <td><label for="second_name_update">Second name</label></td>
+                <td><input type="text" name="secondName" id="second_name_update"></td>
+            </tr>
+
+            <tr>
+                <td><label for="sex_update">Sex</label></td>
+                <td><input type="text" name="sex" id="sex_update"></td>
+            </tr>
+
+            <tr>
+                <td><label for="telephone_number_update">Telephone number</label></td>
+                <td><input type="text" name="telephoneNumber" id="telephone_number_update"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email_update">Email</label></td>
+                <td><input type="email" name="email" id="email_update"></td>
+            </tr>
+
+            <tr>
+                <td><label for="cabinet_number_update">Cabinet number</label></td>
+                <td><input type="text" name="cabinetNumber" id="cabinet_number_update"></td>
+            </tr>
+
+            <tr>
+                <td><label for="department_update">Department</label></td>
+                <td><select name="department" id="department_update"></select></td>
+            </tr>
+        </table>
+        <button type="submit">Update lecturer</button>
+    </form>
+
+    <h2>Deleting lecturer: </h2>
+
+    <form action="/deleteLecturer" method="post" id="deleting_lecturer_form">
+        <table>
+            <tr>
+                <td><label for="deleting_lecturer">Choose lecturer to delete: </label></td>
+                <td><select name="lecturer" id="deleting_lecturer"></select></td>
+            </tr>
+        </table>
+        <button type="submit">Delete lecturer</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/lecturer.js"></script>
+</body>
+</html>
