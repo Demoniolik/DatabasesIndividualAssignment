@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Subjects</h1>
+
+    <h2>Add new subject to lecturer workload: </h2>
+    <form action="/addNewSubject" method="post" id="adding_subject">
+        <table>
+            <tr>
+                <td><label for="title">Title</label></td>
+                <td><input type="text" id="title" name="title"></td>
+            </tr>
+
+            <tr>
+                <td><label for="volume_in_credits">Volume in credits</label></td>
+                <td><input type="text" id="volume_in_credits" name="volumeInCredits"></td>
+            </tr>
+
+        </table>
+        <button type="submit">Add new subject</button>
+    </form>
+
+    <h2>Change subject: </h2>
+
+    <form action="/updateSubject" method="post" id="update_subject">
+        <table>
+            <tr>
+                <td><label for="courses">List of courses</label></td>
+                <td><select name="courses" id="courses"></select></td>
+            </tr>
+            <tr>
+                <td><label for="update_title">New title</label></td>
+                <td><input type="text" id="update_title"></td>
+            </tr>
+
+            <tr>
+                <td><label for="volume_in_credits_update">Volume in credits</label></td>
+                <td><input type="text" id="volume_in_credits_update" name="volumeInCredits"></td>
+            </tr>
+
+        </table>
+        <button type="submit">Change subject</button>
+    </form>
+
+    <h2>Delete subject:</h2>
+
+    <form action="/deleteSubject" method="post" id="deleting_subject">
+        <table>
+            <tr>
+                <td><label for="courses_to_delete">List of courses</label></td>
+                <td><select name="courses" id="courses_to_delete"></select></td>
+            </tr>
+        </table>
+        <button type="submit">Delete subject</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/subject.js"></script>
+</body>
+</html>
